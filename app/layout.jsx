@@ -4,6 +4,7 @@ export const metadata = {
 };
 
 import "./../styles/globals.css";
+import VercelAnalytics from "./vercel-analytics";
 
 export default function RootLayout({ children }) {
   return (
