@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+body { @apply bg-white text-slate-900; }
+.container { @apply max-w-7xl mx-auto px-4; }
+.btn { @apply inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-semibold transition border; }
+.btn-primary { @apply bg-black text-white border-black hover:opacity-90; }
+.btn-outline { @apply bg-white text-slate-900 border-slate-300 hover:bg-slate-50; }
+.card { @apply rounded-2xl border bg-white/70 shadow-sm backdrop-blur; }
+.badge { @apply inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-semibold; }
+.kpi { @apply rounded-xl border bg-white/70 p-3 text-center; }
+.sticky-cta { @apply fixed inset-x-0 bottom-3 z-50 mx-auto w-[min(92%,56rem)] rounded-2xl border bg-white/90 p-3 shadow-xl backdrop-blur; }
+.gradient-bg { background-image: radial-gradient(circle at 10% 0%, #fff7ed 0%, rgba(255,247,237,0) 40%), radial-gradient(circle at 90% 0%, #eff6ff 0%, rgba(239,246,255,0) 40%), radial-gradient(circle at 50% 100%, #ecfdf5 0%, rgba(236,253,245,0) 40%); }
+.glow { position:absolute; inset:0; filter: blur(48px); opacity:.25; pointer-events:none; background: radial-gradient(60% 60% at 0% 0%, #fde68a, transparent), radial-gradient(60% 60% at 100% 0%, #bfdbfe, transparent), radial-gradient(80% 80% at 50% 100%, #bbf7d0, transparent); }
