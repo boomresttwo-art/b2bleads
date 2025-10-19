@@ -4,13 +4,14 @@ export const metadata = {
 };
 
 import "./../styles/globals.css";
-import VercelAnalytics from "./vercel-analytics";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <VercelAnalytics />
+        {/* Vercel Web Analytics */}
+        <Analytics />
         {children}
       </body>
     </html>
